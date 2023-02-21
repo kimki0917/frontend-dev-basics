@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+* {
+	margin: 0;
+	padding: 0
+}
+
+body {
+	font-family: "맑은 고딕", 돋움;
+	font-size: 12px;
+	color: #333;
+}
+
+.header {
+	width: 1000px;
+    height:600px;
+
+    padding: 20px;
+    margin:20px;
+}
+
+.header .logo {
+width: 222px;
+height: 52px;	
+
+margin-right: 20px;
+float:left;
+
+background: url('/ch03/images/n-splite.png') no-repeat 0 -158px;
+background-size: 442px 428px;
+}
+
+.header .search-box {
+position:relative;
+
+width:586px;	
+height: 52px;
+
+border : 2px solid rgb(11, 177, 66);
+display:inline-block;
+}
+
+.search-box input {
+width:400px;
+height: 24px;
+
+margin : 1px;
+padding: 13px 15px;
+
+float: left;
+border: none;
+
+}
+.search-box input:focus {
+outline: none;
+}
+.search-box .keyBoard{
+    position:absolute;
+
+    width:20px;
+    height:12px;
+
+    top:50%;
+    right:15%;
+
+    margin: -6px 10px 0 10px;
+
+    background: url('/ch03/images/n-splite.png') no-repeat -398px -267px;
+    background-size: 442px 428px;
+
+}
+
+.search-box .dropDown{
+    position:absolute;
+
+    width:10px;
+    height:5px;
+
+    top:50%;
+    right:12%;
+
+    margin: -2px 10px 0 10px;
+
+    background: url('/ch03/images/n-splite.png') no-repeat -158px -151px;
+    background-size: 442px 428px;
+}
+
+.search-box .btn-search{
+    position:relative;
+    width:56px;
+    height:52px;
+    
+    border: none;
+    background-color: rgb(11, 177, 66);
+    float:right;
+}
+
+.search-box .btn-search button{
+    position:absolute;
+
+    width:22px;
+    height:22px;
+
+    top:50%;
+    left:50%;
+
+    margin: -11px 0 0 -11px;
+
+    background: url('/ch03/images/n-splite.png') no-repeat -420px -24px;
+    background-size: 442px 428px;
+    
+    border: none;
+}
+
+.search-box a{
+float:right;
+}
+
+</style>
+</head>
+<body>
+	<div class="header">
+		<h1 class="logo"></h1>
+		<div class="search-box">
+			<div class="btn-search">
+				<button></button>
+			</div>
+			<a class="dropDown" href="#"></a> <a class="keyBoard" href="#"></a>
+			<input type="text" />
+		</div>
+	</div>
+</body>
+</html>
